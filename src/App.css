@@ -1,12 +1,20 @@
 .App {
   text-align: center;
+  background-size: cover;
+  height:2000px;
+  background-repeat:no-repeat ;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPCFAIAjniVuuvdSBp_YXoBoVnLWG_23oKbA&usqp=CAU');
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.box2{
+  color:beige;
+  text-align: center;
+  margin-left: 300px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

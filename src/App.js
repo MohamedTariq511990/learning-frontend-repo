@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Delete from './Delete';
+import Post from './Post';
+import Get from './Get';
+import Put from './Put';
+import { BrowserRouter as Router ,Route,Routes } from 'react-router-dom';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Routes>
+      <Route exact path='/' element={<Post />}></Route>
+          <Route exact path='/Put' element={<Put />}></Route>
+          <Route exact path='/Get' element={<Get />}></Route>
+          <Route exact path='/Delete' element={<Delete />}></Route>
+     </Routes>
+    </div></Router>
   );
 }
 
